@@ -21,4 +21,11 @@ public class InventorySlotPanelManager : MonoBehaviour
     {
         
     }
+
+    public void SetDisplayState(bool active) {
+        if (active)
+            panelImage.sprite = panelActiveImage;
+        else
+            panelImage.sprite = panelInactiveImage;
+    }
 }

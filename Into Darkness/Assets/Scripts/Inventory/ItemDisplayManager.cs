@@ -20,4 +20,14 @@ public class ItemDisplayManager : MonoBehaviour
     {
         
     }
+
+    public void SetDisplayState(bool active) {
+        if (active)
+            displaySlot.sprite = displayActiveImage;
+        else {
+            displaySlot.sprite = displayInactiveImage;
+            itemSlot.sprite = null;
+        }
+
+    }
 }
