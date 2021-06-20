@@ -24,8 +24,8 @@ public class WorldGenerator : MonoBehaviour
         Tilemap tile = gameObject.transform.Find("Grid/TileMap").GetComponent<Tilemap>();
         Tilemap deco = gameObject.transform.Find("Grid/DecoMap").GetComponent<Tilemap>();
     
-        for (int x = -10; x < 10; x++) {
-            for (int y = -2; y > -10; y--) {
+        for (int x = -40; x < 40; x++) {
+            for (int y = -2; y > -500; y--) {
                 if (x < 0)
                     tile.SetTile(new Vector3Int(x, y, 0), tiles.Get(TileType.test));
                 else 
