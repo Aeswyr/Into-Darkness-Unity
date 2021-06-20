@@ -134,6 +134,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: World
       objectReference: {fileID: 0}
+    - target: {fileID: 3836022189293750885, guid: 21e164da159640a40a0ae3a70ccaafa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444569184142941821, guid: 21e164da159640a40a0ae3a70ccaafa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946227042908063142, guid: 21e164da159640a40a0ae3a70ccaafa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234695124945623801, guid: 21e164da159640a40a0ae3a70ccaafa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929086750800200402, guid: 21e164da159640a40a0ae3a70ccaafa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9185369235290491887, guid: 21e164da159640a40a0ae3a70ccaafa8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -262,7 +282,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: 684173951
   m_SortingOrder: 0
   m_TargetDisplay: 2
 --- !u!224 &163155011
@@ -437,6 +457,10 @@ PrefabInstance:
     - target: {fileID: 3088669755851334774, guid: becc26eff4a5d484996551b312324d4b, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3088669755851334774, guid: becc26eff4a5d484996551b312324d4b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1925.0006
       objectReference: {fileID: 0}
     - target: {fileID: 3196969956707031457, guid: becc26eff4a5d484996551b312324d4b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -750,6 +774,10 @@ PrefabInstance:
     - target: {fileID: 114701027485753795, guid: ef8c0841c6f1c4d47834a6adf1277945, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701027485753795, guid: ef8c0841c6f1c4d47834a6adf1277945, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8492078144662783894, guid: ef8c0841c6f1c4d47834a6adf1277945, type: 3}
       propertyPath: m_RootOrder

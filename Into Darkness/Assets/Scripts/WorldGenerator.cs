@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class WorldGenerator : MonoBehaviour
 {
 
-    [SerializeField] private TileMasterSkin tiles;
+    [SerializeField] private TileLibrary tiles;
     // Start is called before the first frame update
     void Start()
     {

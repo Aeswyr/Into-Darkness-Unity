@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a355ae956bff684facf6b3ecb1e4954, type: 3}
-  m_Name: TileMasterSkin
+  m_Script: {fileID: 11500000, guid: 4fb5e976cfc50054eb4ed387499d45ca, type: 3}
+  m_Name: ItemLibrary
   m_EditorClassIdentifier: 
-  tiles:
-  - {fileID: 11400000, guid: 3d103e0aaba5cd64c923f8aa5407ca0b, type: 2}
+  items: []
