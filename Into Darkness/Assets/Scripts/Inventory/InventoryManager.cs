@@ -15,9 +15,14 @@ public class InventoryManager : MonoBehaviour
     void Start()
     {
         inventorySlotList = new GameObject[size];
+
         for (int i = 0; i < size; i++)
             inventorySlotList[i] = Instantiate(inventorySlot, inventoryList.transform);
         RegenerateSlotManagers();
+
+        inventorySlotManagerList[2].InsertItem(new Item{
+            type = ItemType.test
+        });
     }
 
     // Update is called once per frame
@@ -49,6 +54,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     private void RegenerateSlotManagers() {
+        inventorySlotManagerList = new InventorySlotManager[size];
         for (int i = 0; i < size; i++)
             inventorySlotManagerList[i] = inventorySlotList[i].GetComponent<InventorySlotManager>();
     }

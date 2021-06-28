@@ -15,6 +15,7 @@ public class TileLibrary : ScriptableObject
     private Dictionary<TileType, TileBase> tileLibrary = new Dictionary<TileType, TileBase>();
 
     public void Load() {
+        tileLibrary.Clear();
         foreach (TypeTilePair pair in tiles)
             tileLibrary.Add(pair.type, pair.tile);
     }

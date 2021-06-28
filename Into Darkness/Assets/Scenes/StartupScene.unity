@@ -206,7 +206,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &8711007587958670624
+--- !u!1001 &1372978784
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -263,22 +263,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d7d2636f2332b24788ac4cc38c7ee40, type: 3}
---- !u!1 &8711007587958670625 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1793050027920507779, guid: 1d7d2636f2332b24788ac4cc38c7ee40, type: 3}
-  m_PrefabInstance: {fileID: 8711007587958670624}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8711007587958670626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8711007587958670625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69baf0af9cea5214db6cbe2669b18843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tileLibrary: {fileID: 11400000, guid: 651c54bee6a63a149aebafd7fd7e52f6, type: 2}
-  nextScene: WorldScene

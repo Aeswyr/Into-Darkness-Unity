@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb5e976cfc50054eb4ed387499d45ca, type: 3}
   m_Name: ItemLibrary
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - type: 0
+    dataSet:
+      sprite: {fileID: 21300000, guid: 49f3b6e8cfd305d478fd532741d407ad, type: 3}
+      baseName: Fleshtion Mark
+      description: You've done something horribly wrong. There will be consequences...
+      flavorText: Chewy... salty... confusing? The Flesh becomes Word, the Word become
+        a part of You. You should not have done that...
+      attributes: 

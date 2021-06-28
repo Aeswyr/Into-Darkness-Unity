@@ -126,7 +126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displaySlot: {fileID: 2210760360904440310}
+  displayActiveImage: {fileID: 21300000, guid: 644570a221cca4541bd1a9d377a87c29, type: 3}
+  displayInactiveImage: {fileID: 21300000, guid: 52f0542e2bd11fc419f310ea40d4553f, type: 3}
   itemSlot: {fileID: 5933111228255035538}
+  itemLibrary: {fileID: 11400000, guid: 0a544d3d1097bc147971bec6066f6963, type: 2}
 --- !u!1 &9015284579794189837
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,12 +17,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            Vector2 momentum = rbody.velocity;
-        if (Input.GetKey("a")) {
-                momentum.x = -speed;
+        Vector2 momentum = rbody.velocity;
+        if (Input.GetAxis("Horizontal") != 0) {
+                momentum.x = speed * Input.GetAxis("Horizontal");
                 rbody.velocity = momentum;
-        } else if (Input.GetKey("d")) {
-                momentum.x = speed;
+        }
+        if (Input.GetAxis("Vertical") != 0) {
+                momentum.y = speed * Input.GetAxis("Vertical");
                 rbody.velocity = momentum;
         }
 

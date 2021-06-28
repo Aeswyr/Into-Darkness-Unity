@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191100a0a53640846bbc0f31d455f114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 4
   inventorySlot: {fileID: 7328874645714191752, guid: 0fb7c946a6b59c2478542bf1586f9d7e, type: 3}
   inventoryList: {fileID: 483946847995911452}
 --- !u!222 &615400110548484541

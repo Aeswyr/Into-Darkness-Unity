@@ -50,6 +50,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c193a3eed2a5d704783243a96329923c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stackTypeText: {fileID: 1941951629736447464}
+  stackCountText: {fileID: 2294734469011986035}
+  itemLibrary: {fileID: 11400000, guid: 0a544d3d1097bc147971bec6066f6963, type: 2}
 --- !u!1 &976014080974363557
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b6e29187b4fb14982353402af0477d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameTagText: {fileID: 5003283111683108079}
+  itemLibrary: {fileID: 11400000, guid: 0a544d3d1097bc147971bec6066f6963, type: 2}
 --- !u!1 &2093094397730740441
 GameObject:
   m_ObjectHideFlags: 0

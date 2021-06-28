@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class ItemDisplayManager : MonoBehaviour
     [SerializeField] private Sprite displayActiveImage;
     [SerializeField] private Sprite displayInactiveImage;
     [SerializeField] private Image itemSlot;
+    [SerializeField] private ItemLibrary itemLibrary;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,13 @@ public class ItemDisplayManager : MonoBehaviour
             displaySlot.sprite = displayInactiveImage;
             itemSlot.sprite = null;
         }
+    }
 
+    public void SetItem(Item item) {
+        itemSlot.sprite = itemLibrary.GetSprite(item.type);
+    }
+
+    public void EmptyItem() {
+        itemSlot.sprite = null;
     }
 }

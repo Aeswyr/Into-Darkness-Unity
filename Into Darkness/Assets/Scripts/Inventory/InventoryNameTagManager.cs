@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class InventoryNameTagManager : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI nameTagText;
+    [SerializeField] private ItemLibrary itemLibrary;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +22,12 @@ public class InventoryNameTagManager : MonoBehaviour
 
     public void SetEnabled(bool enabled) {
         gameObject.SetActive(enabled);
+    }
+
+    public void SetText(Item item) {
+        if (item.name != null)
+            nameTagText.text = item.name;
+        else
+            nameTagText.text = itemLibrary.GetName(item.type);
     }
 }
