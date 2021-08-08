@@ -1,15 +1,24 @@
 using UnityEngine;
+using System;
 
-public struct Item
+/**
+representation of an actual item with any sort of custom values needed
+*/
+[Serializable] public struct Item
 {
     public ItemType type;
     public string name;
+}
+
+[Serializable] public struct ItemAttribute {
+    public ItemAttributeType type;
+    public int value;
 }
 
 public enum ItemType {
     test,
 }
 
-public enum ItemAttribute {
+public enum ItemAttributeType {
     stone
 }

@@ -20,4 +20,6 @@ MonoBehaviour:
       description: You've done something horribly wrong. There will be consequences...
       flavorText: Chewy... salty... confusing? The Flesh becomes Word, the Word become
         a part of You. You should not have done that...
-      attributes: 
+      attributes:
+      - type: 0
+        value: 3

@@ -10,6 +10,7 @@ public class InventorySlotManager : MonoBehaviour
     [SerializeField] private InventorySlotPanelManager panelManager;
 
     private Item stored;
+    private bool filled;
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +25,10 @@ public class InventorySlotManager : MonoBehaviour
     }
 
     public void InsertItem(Item item) {
+        SetSlotState(true);
         stored = item;
         itemDisplayManager.SetItem(item);
-        SetSlotState(true);
+        filled = true;
     }
 
     public Item RemoveItem() {
@@ -34,6 +36,7 @@ public class InventorySlotManager : MonoBehaviour
         stored = default;
         itemDisplayManager.EmptyItem();
         SetSlotState(false);
+        filled = false;
         return item;
     }
 
@@ -42,5 +45,9 @@ public class InventorySlotManager : MonoBehaviour
         stackTagManager.SetEnabled(active);
         itemDisplayManager.SetDisplayState(active);
         panelManager.SetDisplayState(active);
+    }
+
+    public bool ContainsItem() {
+        return filled;
     }
 }

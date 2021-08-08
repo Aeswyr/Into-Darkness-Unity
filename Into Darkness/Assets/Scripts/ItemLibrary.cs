@@ -12,6 +12,9 @@ public class ItemLibrary : ScriptableObject
         public ItemDataSet dataSet;
     }
 
+    /**
+    representation of an default virtual item with any sort of variable values removed
+    */
     [Serializable] public struct ItemDataSet {
         public Sprite sprite;
         public string baseName;

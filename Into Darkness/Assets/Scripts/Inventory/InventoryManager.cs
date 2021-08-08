@@ -6,21 +6,26 @@ public class InventoryManager : MonoBehaviour
 {
 
     [SerializeField] private int size;
+    private int count = 0;
     [SerializeField] private GameObject inventorySlot;
     [SerializeField] private GameObject inventoryList;
-    private GameObject[] inventorySlotList;
     private InventorySlotManager[] inventorySlotManagerList;
 
     // Start is called before the first frame update
     void Start()
     {
-        inventorySlotList = new GameObject[size];
-
-        for (int i = 0; i < size; i++)
-            inventorySlotList[i] = Instantiate(inventorySlot, inventoryList.transform);
+        for (int i = 0; i < size; i++) {
+            Instantiate(inventorySlot, inventoryList.transform);
+        }
         RegenerateSlotManagers();
 
-        inventorySlotManagerList[2].InsertItem(new Item{
+        InsertItem(new Item{
+            type = ItemType.test
+        });
+                InsertItem(new Item{
+            type = ItemType.test
+        });
+                InsertItem(new Item{
             type = ItemType.test
         });
     }
@@ -31,7 +36,7 @@ public class InventoryManager : MonoBehaviour
         
     }
 
-    public void SetSize(int newSize) {
+    /*public void SetSize(int newSize) {
         if (newSize < size) {
             GameObject[] iList = inventorySlotList;
             inventorySlotList = new GameObject[newSize];
@@ -51,11 +56,23 @@ public class InventoryManager : MonoBehaviour
         }
         size = newSize;
         RegenerateSlotManagers();
-    }
+    }*/
 
     private void RegenerateSlotManagers() {
-        inventorySlotManagerList = new InventorySlotManager[size];
-        for (int i = 0; i < size; i++)
-            inventorySlotManagerList[i] = inventorySlotList[i].GetComponent<InventorySlotManager>();
+            inventorySlotManagerList = inventoryList.GetComponentsInChildren<InventorySlotManager>();
+    }
+
+    public bool InsertItem(Item item) {
+        if (count >= size)
+            return false;
+        foreach (InventorySlotManager slot in inventorySlotManagerList)
+        {
+            if (slot.ContainsItem()) 
+                continue;
+            
+            slot.InsertItem(item);
+            break;
+        }
+        return true;
     }
 }

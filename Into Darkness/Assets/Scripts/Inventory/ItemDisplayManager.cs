@@ -10,7 +10,6 @@ public class ItemDisplayManager : MonoBehaviour
     [SerializeField] private Sprite displayActiveImage;
     [SerializeField] private Sprite displayInactiveImage;
     [SerializeField] private Image itemSlot;
-    [SerializeField] private ItemLibrary itemLibrary;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,10 +32,13 @@ public class ItemDisplayManager : MonoBehaviour
     }
 
     public void SetItem(Item item) {
-        itemSlot.sprite = itemLibrary.GetSprite(item.type);
+        Sprite sprite = LibraryManager.Instance.GetItems().GetSprite(item.type);
+        itemSlot.sprite = sprite;
+        SetDisplayState(true);
     }
 
     public void EmptyItem() {
         itemSlot.sprite = null;
+        SetDisplayState(false);
     }
 }

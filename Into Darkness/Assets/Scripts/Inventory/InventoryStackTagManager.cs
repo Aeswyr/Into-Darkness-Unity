@@ -8,7 +8,6 @@ public class InventoryStackTagManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI stackTypeText;
     [SerializeField] private TextMeshProUGUI stackCountText;
-    [SerializeField] private ItemLibrary itemLibrary;
     // Start is called before the first frame update
     void Start()
     {

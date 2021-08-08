@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6994483562881176171}
   - component: {fileID: -3085324172372557071}
+  - component: {fileID: -2074003631253481072}
   m_Layer: 0
-  m_Name: LoadManager
-  m_TagString: Untagged
+  m_Name: LibraryManager
+  m_TagString: LibraryManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,6 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69baf0af9cea5214db6cbe2669b18843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: WorldScene
+--- !u!114 &-2074003631253481072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793050027920507779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d8021234933954c977ec60ac0414e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   tileLibrary: {fileID: 11400000, guid: 651c54bee6a63a149aebafd7fd7e52f6, type: 2}
   itemLibrary: {fileID: 11400000, guid: 0a544d3d1097bc147971bec6066f6963, type: 2}
-  nextScene: WorldScene

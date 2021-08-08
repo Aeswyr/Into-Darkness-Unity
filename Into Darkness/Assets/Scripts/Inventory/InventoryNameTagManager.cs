@@ -7,7 +7,6 @@ using TMPro;
 public class InventoryNameTagManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI nameTagText;
-    [SerializeField] private ItemLibrary itemLibrary;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +27,6 @@ public class InventoryNameTagManager : MonoBehaviour
         if (item.name != null)
             nameTagText.text = item.name;
         else
-            nameTagText.text = itemLibrary.GetName(item.type);
+            nameTagText.text = LibraryManager.Instance.GetItems().GetName(item.type);
     }
 }
