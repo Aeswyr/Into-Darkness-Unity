@@ -34,11 +34,9 @@ public class ItemDisplayManager : MonoBehaviour
     public void SetItem(Item item) {
         Sprite sprite = LibraryManager.Instance.GetItems().GetSprite(item.type);
         itemSlot.sprite = sprite;
-        SetDisplayState(true);
     }
 
     public void EmptyItem() {
         itemSlot.sprite = null;
-        SetDisplayState(false);
     }
 }

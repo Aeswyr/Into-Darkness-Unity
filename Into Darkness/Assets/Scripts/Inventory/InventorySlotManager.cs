@@ -15,7 +15,7 @@ public class InventorySlotManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetSlotState(false);
+        
     }
 
     // Update is called once per frame
@@ -28,6 +28,7 @@ public class InventorySlotManager : MonoBehaviour
         SetSlotState(true);
         stored = item;
         itemDisplayManager.SetItem(item);
+        nameTagManager.SetText(item);
         filled = true;
     }
 
@@ -45,6 +46,10 @@ public class InventorySlotManager : MonoBehaviour
         stackTagManager.SetEnabled(active);
         itemDisplayManager.SetDisplayState(active);
         panelManager.SetDisplayState(active);
+    }
+
+    public void InitSlot() {
+        SetSlotState(false);
     }
 
     public bool ContainsItem() {

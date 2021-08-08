@@ -15,17 +15,18 @@ public class InventoryManager : MonoBehaviour
     void Start()
     {
         for (int i = 0; i < size; i++) {
-            Instantiate(inventorySlot, inventoryList.transform);
+            GameObject obj = (GameObject)Instantiate(inventorySlot, inventoryList.transform);
+            obj.GetComponent<InventorySlotManager>().InitSlot();
         }
         RegenerateSlotManagers();
 
         InsertItem(new Item{
             type = ItemType.test
         });
-                InsertItem(new Item{
+        InsertItem(new Item{
             type = ItemType.test
         });
-                InsertItem(new Item{
+        InsertItem(new Item{
             type = ItemType.test
         });
     }
