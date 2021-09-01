@@ -26,7 +26,3 @@ public class TileLibrary : ScriptableObject
 
 
 }
-
-public enum TileType {
-    test
-}

@@ -21,13 +21,13 @@ public class InventoryManager : MonoBehaviour
         RegenerateSlotManagers();
 
         InsertItem(new Item{
-            type = ItemType.test
+            type = ItemType.Default
         });
         InsertItem(new Item{
-            type = ItemType.test
+            type = ItemType.Default
         });
         InsertItem(new Item{
-            type = ItemType.test
+            type = ItemType.Default
         });
     }
 

@@ -27,9 +27,9 @@ public class WorldGenerator : MonoBehaviour
         for (int x = -40; x < 40; x++) {
             for (int y = -2; y > -500; y--) {
                 if (x < 0)
-                    tile.SetTile(new Vector3Int(x, y, 0), tiles.Get(TileType.test));
+                    tile.SetTile(new Vector3Int(x, y, 0), tiles.Get(TileType.Default));
                 else 
-                    tile.SetTile(new Vector3Int(x, y, 0), tiles.Get(TileType.test));
+                    tile.SetTile(new Vector3Int(x, y, 0), tiles.Get(TileType.Default));
             }
         }
     

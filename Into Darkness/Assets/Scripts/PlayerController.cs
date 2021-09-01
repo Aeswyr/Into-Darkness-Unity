@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 
     private float speed = 6f;
-    Rigidbody2D rbody;
+    [SerializeField] private Rigidbody2D rbody;
+    [SerializeField] private GameObject inventory;
 
     // Start is called before the first frame update
     void Start()
@@ -22,14 +23,13 @@ public class PlayerController : MonoBehaviour
                 momentum.x = speed * Input.GetAxis("Horizontal");
                 rbody.velocity = momentum;
         }
-        if (Input.GetAxis("Vertical") != 0) {
-                momentum.y = speed * Input.GetAxis("Vertical");
-                rbody.velocity = momentum;
-        }
+        //if (Input.GetAxis("Vertical") != 0) {
+        //        momentum.y = speed * Input.GetAxis("Vertical");
+        //        rbody.velocity = momentum;
+        //}
 
         if (Input.GetKeyDown("e")) {
-                GameObject inv = gameObject.transform.Find("PlayerInventory").gameObject;
-                inv.SetActive(!inv.activeSelf);
+                inventory.SetActive(!inventory.activeSelf);
         }
         
     }

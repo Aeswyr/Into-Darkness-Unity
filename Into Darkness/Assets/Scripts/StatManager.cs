@@ -21,6 +21,8 @@ public class StatManager : MonoBehaviour
     private int focusMax;
     private int focus;
 
+    private int orbsMax;
+
     // Start is called before the first frame update
     void Start()
     {

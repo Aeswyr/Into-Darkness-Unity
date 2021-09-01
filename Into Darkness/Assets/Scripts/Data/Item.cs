@@ -16,9 +16,9 @@ representation of an actual item with any sort of custom values needed
 }
 
 public enum ItemType {
-    test,
+    Default,
 }
 
 public enum ItemAttributeType {
-    stone
+    Default,
 }

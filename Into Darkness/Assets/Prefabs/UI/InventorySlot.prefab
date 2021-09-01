@@ -815,6 +815,10 @@ PrefabInstance:
       propertyPath: displayInactiveImage
       value: 
       objectReference: {fileID: 21300000, guid: 52f0542e2bd11fc419f310ea40d4553f, type: 3}
+    - target: {fileID: 2210760360904440310, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5080478768619615431, guid: 68b1399326db79644ae71743edef6b63, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -882,6 +886,42 @@ PrefabInstance:
     - target: {fileID: 5762769609490410172, guid: 68b1399326db79644ae71743edef6b63, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933111228255035538, guid: 68b1399326db79644ae71743edef6b63, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7772918083498219109, guid: 68b1399326db79644ae71743edef6b63, type: 3}
       propertyPath: m_Name
