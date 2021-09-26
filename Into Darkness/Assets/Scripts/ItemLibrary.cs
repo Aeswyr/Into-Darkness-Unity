@@ -24,6 +24,7 @@ public class ItemLibrary : ScriptableObject
     }
 
     [SerializeField] private ItemDataPair[] items;
+    
     private Dictionary<ItemType, ItemDataSet> itemLibrary = new Dictionary<ItemType, ItemDataSet>();
 
     public void Load() {
