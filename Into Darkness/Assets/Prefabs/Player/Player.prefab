@@ -216,5 +216,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: 44256828894162632}
   animator: {fileID: 2603361191284544696}
-  renderer: {fileID: 2849146503432399387}
+  spriteRenderer: {fileID: 2849146503432399387}
   speed: 5

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 692484425103308663}
   - component: {fileID: 3190152455899606536}
-  - component: {fileID: 1767410763458333651}
+  - component: {fileID: 1894795890759714391}
+  - component: {fileID: 8549241676263942846}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -50,10 +51,10 @@ MonoBehaviour:
   LogLevel: 1
   NetworkConfig:
     ProtocolVersion: 0
-    NetworkTransport: {fileID: 1767410763458333651}
+    NetworkTransport: {fileID: 1894795890759714391}
     PlayerPrefab: {fileID: 5865032791928650329, guid: 7a838ce1d09e28945a1c19570bf3a4e5, type: 3}
     NetworkPrefabs: []
-    TickRate: 30
+    TickRate: 50
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
     ConnectionData: 
@@ -68,7 +69,7 @@ MonoBehaviour:
     LoadSceneTimeOut: 120
     MessageBufferTimeout: 20
     EnableNetworkLogs: 1
---- !u!114 &1767410763458333651
+--- !u!114 &1894795890759714391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,13 +78,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 8847450770041836181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84c2d8dfe509a34fb59e2b81f8e1319, type: 3}
+  m_Script: {fileID: 11500000, guid: 6960e84d07fb87f47956e7a81d71c4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageBufferSize: 5120
-  MaxConnections: 100
-  MaxSentMessageQueueSize: 128
-  ConnectAddress: 127.0.0.1
-  ConnectPort: 7777
-  ServerListenPort: 7777
-  MessageSendMode: 0
+  m_ProtocolType: 1
+  m_MaxPacketQueueSize: 128
+  m_SendQueueBatchSize: 6144
+  m_MaxSendQueueSize: 98304
+  m_HeartbeatTimeoutMS: 500
+  m_ConnectTimeoutMS: 1000
+  m_MaxConnectAttempts: 60
+  m_DisconnectTimeoutMS: 30000
+  ConnectionData:
+    Address: 127.0.0.1
+    Port: 7777
+--- !u!114 &8549241676263942846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847450770041836181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75cfddd012fa7654aa7fae28257a2673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  environment: production
+  maxConnections: 8

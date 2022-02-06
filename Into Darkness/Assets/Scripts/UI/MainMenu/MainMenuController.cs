@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenuController : MonoBehaviour
 {
     [SerializeField] private string gameScene;
     [SerializeField] private NetworkStartVars networkVarsSaver;
+    [SerializeField] private TMP_InputField inputField;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class MainMenuController : MonoBehaviour
 
     public void StartClient() {
         networkVarsSaver.IsHost = false;
+        networkVarsSaver.joinCode = inputField.text;
         SceneManager.LoadScene(gameScene);
     }
 }

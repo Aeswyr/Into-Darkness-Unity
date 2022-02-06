@@ -5,4 +5,5 @@ using UnityEngine;
 public class NetworkStartVars : MonoBehaviour
 {
     public bool IsHost = false;
+    public string joinCode;
 }

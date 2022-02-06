@@ -5,7 +5,7 @@ public class PlayerController : NetworkBehaviour
 {
     [SerializeField] private Rigidbody2D rbody;
     [SerializeField] private Animator animator;
-    [SerializeField] private SpriteRenderer renderer;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     private InputHandler input;
     [SerializeField] private float speed;
     private Vector2 dirLocal = Vector2.zero;
@@ -49,10 +49,10 @@ public class PlayerController : NetworkBehaviour
 
     [ClientRpc] private void SyncFacingClientRpc(float dir) {
         if (dir > 0) {
-            renderer.flipX = false;
+            spriteRenderer.flipX = false;
         }
         else if (dir < 0) {
-            renderer.flipX = true;
+            spriteRenderer.flipX = true;
         }
     }
 }

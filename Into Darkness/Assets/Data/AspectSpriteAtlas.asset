@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: AspectSpriteAtlas
   m_EditorClassIdentifier: 
   atlas:
-    atlas:
+    list:
     - key: 1
-      value: {fileID: 21300000, guid: 4e2357ea93bcfa342928c96661ff27f6, type: 3}
+      value: {fileID: -1441955568, guid: b75347d81a5da914180e41f4d4eb5207, type: 3}
     - key: 2
-      value: {fileID: 21300000, guid: a9c2d924bd53f6a489587d06eb8a76d5, type: 3}
+      value: {fileID: -1792445859, guid: b75347d81a5da914180e41f4d4eb5207, type: 3}
     - key: 3
-      value: {fileID: 21300000, guid: 1855af76ecb0a2e4b9de3eb44b37db9a, type: 3}
+      value: {fileID: -1292126394, guid: b75347d81a5da914180e41f4d4eb5207, type: 3}
     - key: 4
-      value: {fileID: 21300000, guid: c8a1164d2c06a3a44a43af8fec74bc9e, type: 3}
+      value: {fileID: 1478694611, guid: b75347d81a5da914180e41f4d4eb5207, type: 3}
     - key: 5
-      value: {fileID: 21300000, guid: 17dee94c17710cb4e8aa4b561df24a1e, type: 3}
+      value: {fileID: -933931079, guid: b75347d81a5da914180e41f4d4eb5207, type: 3}
     - key: 6
-      value: {fileID: 21300000, guid: 11226c62da756e448aa4f3adbf0b33d5, type: 3}
+      value: {fileID: -317545037, guid: b75347d81a5da914180e41f4d4eb5207, type: 3}
